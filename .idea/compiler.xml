@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AutomationTestingJAVA" target="1.5" />
+      <module name="AutomationTestingJAVA" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
