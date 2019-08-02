@@ -2,6 +2,8 @@ package com.leoli.test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import com.leoli.login.LoginBase;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,8 +15,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
-
-public class SeleniumUITest {
+@CucumberOptions(features = "src/test/java/com.leoli.test" , glue = "steps")
+public class SeleniumUITest extends AbstractTestNGCucumberTests {
 
     private WebDriver driver;
 //    private String baseUrl;
